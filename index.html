@@ -17,22 +17,22 @@
 			<section class="main">
 				<input id="toggle-all" class="toggle-all" type="checkbox">
 				<label for="toggle-all">すべて完了にする</label>
-				<ul class="todo-list">
+				<ul class="todo-list" id="todoList">
 					<!-- これらは単にtodoアイテムの構造を示すサンプルです。 -->
 					<!-- リストアイテム（li）要素は編集時は'editing'、完了としてチェックされたときは'completed'クラスが付きます。 -->
-					<li class="completed">
+					<li>
 						<div class="view">
-							<input class="toggle" type="checkbox" checked>
+							<input class="toggle" type="checkbox">
 							<label>ラーメンを食べる</label>
-							<button class="destroy" id="ramenDel"></button>
+							<button class="destroy"></button>
 						</div>
 						<input class="edit" value="Create a TodoMVC template">
 					</li>
-					<li id="comp">
+					<li>
 						<div class="view">
-							<input class="toggle" id="okashi" type="checkbox">
+							<input class="toggle" type="checkbox">
 							<label>お菓子を買う</label>
-							<button class="destroy" id="okashiDel"></button>
+							<button class="destroy"></button>
 						</div>
 						<input class="edit" value="Rule the web">
 					</li>
