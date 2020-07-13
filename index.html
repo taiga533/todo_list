@@ -20,38 +20,22 @@
 				<ul class="todo-list" id="todoList">
 					<!-- これらは単にtodoアイテムの構造を示すサンプルです。 -->
 					<!-- リストアイテム（li）要素は編集時は'editing'、完了としてチェックされたときは'completed'クラスが付きます。 -->
-					<li>
-						<div class="view">
-							<input class="toggle" type="checkbox">
-							<label>ラーメンを食べる</label>
-							<button class="destroy"></button>
-						</div>
-						<input class="edit" value="Create a TodoMVC template">
-					</li>
-					<li>
-						<div class="view">
-							<input class="toggle" type="checkbox">
-							<label>お菓子を買う</label>
-							<button class="destroy"></button>
-						</div>
-						<input class="edit" value="Rule the web">
-					</li>
 				</ul>
 			</section>
 			<!-- footerはtodoが何もないときは非表示で、１つでもtodoが存在する場合は表示されます。 -->
 			<footer class="footer">
 				<!-- 通常は'残り0項目' -->
-				<span class="todo-count">残り<strong>0</strong>項目</span>
+				<span class="todo-count">残り<strong class="imcompleteNum">0</strong>項目</span>
 				<!-- あなたがルーティングを実装しない場合は削除 -->
 				<ul class="filters">
 					<li>
-						<a class="selected" href="#/">すべて</a>
+						<a id="showAllButton" href="#/">すべて</a>
 					</li>
 					<li>
-						<a href="#/active">未完了</a>
+						<a id="showImcompletedButton" href="#/active">未完了</a>
 					</li>
 					<li>
-						<a href="#/completed">完了</a>
+						<a id="showCompletedButton" href="#/completed">完了</a>
 					</li>
 				</ul>
 				<!-- 完了したtodoが存在しない場合は非表示 ↓ -->
